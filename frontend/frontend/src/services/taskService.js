@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:8080/api/tasks'
+const BASE_URL = import.meta.env.VITE_API_URL
 
 export function getTasks() {
   return fetch(BASE_URL).then((res) => res.json())
