@@ -12,7 +12,7 @@ import com.pascal.DFlow.service.TaskService;
 
 import jakarta.validation.Valid;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://frontend-dusky-three-yevmtqhkos.vercel.app"})
 @RestController
 @RequestMapping("/api/tasks")
 public class taskController {
