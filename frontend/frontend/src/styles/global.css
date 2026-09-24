@@ -449,3 +449,39 @@ h2 {
   color: var(--color-text-muted);
   font-size: 14px;
 }
+
+@media (max-width: 767px) {
+  /* ... your existing sidebar/mobile-nav rules stay here ... */
+
+  .tasks-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tasks-toolbar input {
+    max-width: 100%;
+  }
+
+  .task-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .task-item {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .task-title {
+    flex-basis: 100%;
+  }
+
+  h2 {
+    margin-top: 28px;
+  }
+
+  .stat-cards {
+    margin-bottom: 24px;
+  }
+}
