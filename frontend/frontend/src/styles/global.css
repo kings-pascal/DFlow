@@ -502,3 +502,12 @@ h2 {
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  .tasks-toolbar button {
+    width: 100%;
+  }
+
+  .task-filters {
+    max-width: 100%;
+  }
+}
